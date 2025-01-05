@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div id="choose-payment-method">
                     <h3>Choose Your Payment Method</h3>
                     <button id="upi" class='paymentMethod' onclick="payWithUpi()">UPI</button>
-                    <button class='paymentMethod'>Debit Card</button>
+                    <button class='paymentMethod' onclick="alert('I will build it further more. For more updates, follow me on twitter: @ayush_maan_')">Debit Card</button>
                 </div>
                 ` 
                 paymentContainer.appendChild(createPaymentDiv)
@@ -60,9 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
             createUPI_Gateway.innerHTML = `
             <div class="upi-form">
             <h4>Scan this scanner to pay</h4>
-            <img src="upi scanner.jpeg" alt="upi scanner">
+            <img src="upi.jpeg" alt="upi scanner" class="upi-image">
             <h4>OR, enter your upi id</h4>
-            <input type="text" name="" id="upi-id-input"><button id="upi-confirm-button">Confirm</button>
+            <input type="text" name="" id="upi-id-input"><button id="upi-confirm-button" onclick="alert('I will build it further more. For more updates, follow me on twitter: @ayush_maan_')">Confirm</button>
             </div>
             `
             paymentContainer.appendChild(createUPI_Gateway)
