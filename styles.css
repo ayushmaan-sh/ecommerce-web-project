@@ -1,0 +1,284 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1f1f1f;
+    position: fixed;
+   top: 0;
+   width: 95%;
+   z-index: 1000;
+  }
+
+  main {
+    margin-top: 80px; /* Adjust this value based on your header's height */
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f73409;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  header nav ul li a:hover {
+    color: #f73409;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: url('upper-section-bg.jpg') no-repeat center center / cover;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background-color: #f73409;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #e56f25;
+  }
+  
+  /* Product Section */
+  .products {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .products h2 {
+    margin-bottom: 20px;
+  }
+  
+  .product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s;
+  }
+  
+  .product-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .product-card h3 {
+    margin: 15px 0;
+  }
+  
+  .product-card p {
+    color: #e91e63;
+    font-weight: bold;
+  }
+  
+  .product-card button {
+    padding: 10px 15px;
+    background-color: #f73409;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  
+  
+  .product-card button:hover {
+    background-color: #d67846;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: #ffffff;
+  }
+  
+  .dropdown-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    top: 100%;
+    left: 0;
+  }
+  
+  .dropdown-menu li {
+    width: 150px;
+  }
+  
+  .dropdown-menu li a {
+    padding: 10px 20px;
+    color: #ffffff;
+  }
+  
+  nav ul li:hover .dropdown-menu {
+    display: block;
+  }
+  
+  nav ul li a:hover,
+  .dropdown-menu li a:hover {
+    background-color: #555;
+  }
+
+  #cart-section {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .cart-item {
+    background-color: #444;
+    padding: 10px;
+    margin: 10px 0;
+    width: auto;
+    border-radius: 5px;
+  }
+  
+  .cart-total {
+    font-size: 1.2em;
+    margin: 20px 0;
+  }
+  
+  .checkout-button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .checkout-button:hover {
+    background-color: #e64a19;
+  }
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+
+  #choose-payment-method{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .paymentMethod{
+    background-color: rgb(7, 90, 244);
+    color: white;
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+  }
+
+  .paymentMethod:hover{
+    background-color: rgb(24, 124, 218);
+  }
+
+  #upi-id-input{
+    width: 360px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  #upi-confirm-button{
+    height: 45px;
+    font-size: 20px;
+    background-color: rgb(7, 90, 244);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 5px;
+  }

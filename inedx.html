@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Threads & Trends</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Threads & Trends</div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Categories</a>
+          <ul class="dropdown-menu">
+            <li><a href="#men">Men</a></li>
+            <li><a href="#women">Women</a></li>
+          </ul>
+        </li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#cart-section">Your Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Mens -->
+
+    <section class="hero">
+      <h1>Welcome to <span style="color: #f73409;">Threads & Trends</span></h1>
+      <p>Your ultimate destination for premium products.</p>
+      <a href="#products" class="cta-button">Shop Now</a>
+    </section>
+
+    <section id="products" class="products">
+      <h2 id="men">Featured Products For <span style="color: rgb(7, 99, 248);">Men</span></h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="formal_shirt_1.jpg" alt="Product 1">
+          <h3 id="product-name">Symbol Men's Solid Slim Fit Formal Shirt</h3>
+          <p class="item-price">₹<span id="item-cost">995</span></p>
+          <button class="cart-button">Add to Cart</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+          <img src="men_clothes_1.jpg" alt="Product 2">
+          <h3 id="product-name">YSYB Dezines Blazer (For all purpose)</h3>
+          <p class="item-price">₹<span id="item-cost">1250</span></p>
+          <button class="cart-button">Add to Cart</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+          <img src="men_clothes_2.jpg" alt="Product 3">
+          <h3 id="product-name">Trillion Regular Fit Printed Hoodie for Men</h3>
+          <p class="item-price">₹<span id="item-cost">1150</span></p>
+          <button class="cart-button">Add to Cart</button>
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+<!-- Womans -->
+    <section id="products" class="products">
+      <h2 id="women">Featured Products For <span style="color: rgb(224, 7, 248);">Woman</span></h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="woman_clothes_1.jpg" alt="Product 1">
+          <h3 id="product-name">Leriya Fashion Stylish Western Shirt</h3>
+          <p class="item-price">₹<span id="item-cost">900</span></p>
+          <button class="cart-button">Add to Cart</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+          <img src="woman_clothes_2.jpg" alt="Product 2">
+          <h3 id="product-name">Amayra Cotton Kurta with Pant and Dupatta Set</h3>
+          <p class="item-price">₹<span id="item-cost">700</span></p>
+          <button class="cart-button">Add to Cart</button>
+          <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+          <img src="woman_clothes_3.avif" alt="Product 3">
+          <h3 id="product-name">Kanjivaram Soft Lichi Silk Saree With Blouse Piece</h3>
+          <p class="item-price">₹<span id="item-cost">800</span></p>
+          <button class="cart-button">Add to Cart</button>
+          <button>Buy Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Section -->
+
+    <div id="cart-section">
+      <h2>Your Cart</h2>
+      <!-- Cart item -->
+      <div class="cart-items">
+        <div class="cart-item">
+          <div id="cart-items-list" style="display: flex;"></div>
+          <p><span id="cart-product"></span></p>
+          <p>Total Quantity: <span id="cart-quantity"></span></p>
+        </div>
+      </div>
+      <div class="cart-total">
+        <p>Total Price: ₹<span id="total-price"></span></p>
+      </div>
+      <button class="checkout-button">Place Order</button>
+       <!-- Payment Method -->
+      <div class="payment-container"></div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <p style="color: #ffff00;">Mail: threads@trends.com  |  Customer Care : +91-7778889990  |  Happy Shopping!</p>
+    <h3 id="about">About Us: <span style="color: #f73409;">Threads & Trends</span></h3>
+    <p>Welcome to Threads & Trends, your ultimate destination for fashion-forward clothing and accessories. We believe in celebrating individuality and style through our carefully curated collections, designed to keep you on top of the latest trends. Our mission is to provide high-quality, affordable fashion that empowers you to express your unique personality. Whether you're looking for timeless classics or bold statements, we've got something for everyone. At Threads & Trends, fashion isn't just what you wear—it's who you are. Join us in redefining style, one trend at a time.</p>
+  </footer>
+
+  <!-- Javascript inject -->
+   <script src="script.js"></script>
+</body>
+</html>
